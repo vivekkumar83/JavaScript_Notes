@@ -58,16 +58,16 @@ comment
 
 - It is the result of the program which is displayed to the user.
 - In JavaScript, There are several ways to print output.
-- using `console.log()`
-- using `document.write()`
-- using `alert()`
+1. using `console.log()`
+2. using `document.write()`
+3. using `alert()`
 
-### Using Console.log()
+### 1. Using Console.log()
 - It is a method used to output data or messages to the browser console.
 - The `log()` part of `console.log()` is a function call that accepts one or more arguments to be printed to the console.
 - The `console.` part of `console.log()` is an object reference that provides access to the `log()` method.
 
-#### Example 
+#### Example 1 
 ```javascript
 console.log("Hello");
 console.log("Everyone");
@@ -78,7 +78,7 @@ Hello
 Everyone
 ```
 
-#### Example 
+#### Example 2
 ```javascript
 console.log("Hello", "Everyone");
 ```
@@ -86,10 +86,10 @@ console.log("Hello", "Everyone");
 ```
 Hello  Everyone
 ```
-###  using document.write()
+###  2. Using document.write()
 - It is a method is used to write dynamic content to an HTML document.
 
-#### Example 
+#### Example 3
 ```javascript
 <!DOCTYPE html>
 <html>
@@ -104,11 +104,11 @@ Hello  Everyone
 </html>
 ```
 
-###  using  alert()
+###  3. Using  alert()
 
 - It is a method used to display output as a pop-up message.
 
-#### Example 
+#### Example 4
 ```javascript
 alert("Hello, world!");
 ```
@@ -118,7 +118,7 @@ alert("Hello, world!");
 - Using the `prompt()` method, we can take user input.
 - It only takes a string as its argument.
 
-#### Example 
+#### Example 5
 ```javascript
 let name = prompt("What is your name?"); 
 console.log("Hello, " + name + "!");
