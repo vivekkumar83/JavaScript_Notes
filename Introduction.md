@@ -8,12 +8,77 @@
 	 - Functional Programming
 	 - Object Oriented Programming
 
-### Statements & Expressions	
+# Statements & Expressions	
 
 - Statement is a line of code, which include character, number, operator that performs a specific action or produces a result.
 
 > sum = 3 + 5
 
-- Expression is a combination of variables, values, operators that can be evaluated to produce a result.
+- A statement can contain one or more expressions, and an expression can be part of a statement
 
-> console.log("The sum of 5 and 3 is " + (5 + 3));
+> add = 6 + 5
+
+- here 6 and 5 are literal value expression, add is variable expression, (+) arithmatic operator expression.
+
+# Keywords
+
+- Keywords are the reserved words in a programming language.
+- it has a special meaning to the program.
+- it can't be used as a variable name and function name
+
+> e.g
+> `var`, `let`, `const`, `if`, etc
+
+# Semicolon
+
+- Every Statement is terminated with a semicolon `;` 
+- it's optional to use.
+
+# Comment
+
+- It is used for documentation purpose and avoid by compiler
+
+- Single line comment
+```javascript
+// This is a single-line comment
+
+```
+
+- Multiple line comment	
+```javascript
+/*
+This is a 
+multi-line 
+comment
+
+*/
+```
+
+# Output
+
+- It is the result of the program which is displayed to the user.
+- In JavaScript, There are several ways to print output.
+- using `console.log()`
+- using `document.write()`
+- using `alert()`
+
+### Using Console.log()
+- It is a method used to output data or messages to the browser console.
+- The `log()` part of `console.log()` is a function call that accepts one or more arguments to be printed to the console.
+- The `console.` part of `console.log()` is an object reference that provides access to the `log()` method.
+
+#### Example 1
+```javascript
+console.log("Hello");
+console.log("Everyone");
+```
+#### Output
+> Hello
+> Everyone
+
+#### Example 2
+```javascript
+console.log("Hello", "Everyone");
+```
+#### Output
+> Hello  Everyone
