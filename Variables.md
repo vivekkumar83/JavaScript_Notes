@@ -126,3 +126,45 @@ SyntaxError: Identifier 'userName' has already been declared
 - It is used to declare a constant variable that cannot be reassigned.
 - It must be initilized with some value
 - it can't be updated or re-declared
+
+#### Example
+```javascript
+const userName = "tenacious";
+console.log(userName);
+
+```
+
+#### Output
+```
+tenacious
+```
+
+#### Example for update
+```javascript
+const userName = "tenacious";
+console.log(userName);
+
+userName = "developer";
+console.log(userName);
+
+```
+
+#### Output
+```
+TypeError: Assignment to constant variable.
+```
+
+#### Example for redeclared 
+```javascript
+const userName = "tenacious";
+console.log(userName);
+
+const userName = "developer";
+console.log(userName);
+
+```
+
+#### Output
+```
+SyntaxError: Identifier 'userName' has already been declared
+```
