@@ -115,8 +115,10 @@ console.log(userName);
 SyntaxError: Identifier 'userName' has already been declared
 ```
 
-> **Note**
+**Note**
+
 > `var` can be updated and re-declared
+
 > `let` can be udated but not re-declared
 
 ### Variable using const
