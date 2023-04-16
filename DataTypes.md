@@ -118,3 +118,112 @@ let hexNumber = 0x2a;        // hexadecimal
 - `+0` , the  positive number smaller than `Number.MIN_VALUE`
 - `-0` , the  negative number greater than `- Number.MIN_VALUE`
 - `Number.isSafeInteger()`, this method can check the safe integer number
+
+### NaN
+
+- `NaN` stands for `Not a Number`. 
+- It is a value that represents an unrepresentable mathematical value.
+- It is not equal to any value, including itself.
+
+```javascript
+console.log(NaN);  // outputs "NaN"
+
+console.log(NaN == NaN);  // outputs "false"
+
+console.log(NaN + 1);  // outputs "NaN"
+
+console.log(NaN * 5);  // outputs "NaN"
+```
+
+- `isNaN()` is a function which returns true when passed `NaN` , and returns false when passed a valid number.
+
+```javascript
+console.log(isNaN(NaN));  // outputs "true"
+
+console.log(isNaN(5));  // outputs "false"
+```
+
+### BigInt 
+
+- `BigInt` is a built-in object that provides a way to represent integers larger than the maximum safe integer (`Number.MAX_SAFE_INTEGER`), which is 2^53 - 1.
+- It  is denoted by appending the `n` suffix to a numeric literal or call the `BigInt()` constructor:
+
+  #### Examples
+	```javascript
+	const a = 125n;
+	const b = BigInt(476);
+	```
+
+- `BigInt` values cannot be mixed with regular `Number` values in arithmetic operations.
+
+	#### Examples
+	```javascript
+	const a = 123n;
+	const b = 456;
+
+	console.log(a + b); 
+	```
+
+	#### Output
+	```javascript
+	TypeError: Cannot mix BigInt and other types, use explicit conversions
+	```
+###  Null 
+
+- `null` is a primitive value that represents the intentional absence of any object value. 
+- It is a special value that can be assigned to a variable to indicate that the variable has no value.
+
+#### Example
+```javascript
+let x = null;
+console.log(x); // null
+```
+
+###  Null 
+
+- `undefined` is a primitive value that is assigned to a variable when it has been declared but has not been assigned a value. 
+- It is also used as the default return value for a function that does not explicitly return a value.
+
+#### Example
+```javascript
+let variable;
+console.log(variable); // undefined
+```
+
+### Boolean 
+
+- `Boolean` is a primitive data type that represents one of two values: `true` or `false`. 
+- It's used to represent logical values and is often used in conditional statements and comparisons.
+
+#### Example
+```javascript
+let x = true;
+let y = false;
+console.log(x); // true
+console.log(y); // false
+```
+
+## The typeof operator
+
+- The `typeof` operator is used to determine the the type of a given value or expression. 
+- It returns a string that represents the type of the operand.
+
+#### Example
+```javascript
+typeof 56; // "number"
+typeof NaN; // "number"
+typeof Infinity; // "number"
+typeof "Hello"; // "string"
+typeof true; // "boolean"
+typeof undefined; // "undefined"
+typeof null; // "object"
+typeof {}; // "object"
+typeof []; // "object"
+typeof function() {}; // "function"
+typeof BigInt(42); // "bigint"
+typeof Symbol("foo"); // "symbol"
+```
+- The `typeof` operator in JavaScript returns `"object"` when applied to `null`.
+- This is considered to be a mistake in the language design, as `null` represents the intentional absence of any object value, and is not an object itself.
+- The `typeof` operator in JavaScript returns `"function"` when applied to a function expression or declaration.
+- Functions are a type of object in JavaScript, but have additional properties and capabilities beyond regular objects.
