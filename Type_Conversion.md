@@ -392,3 +392,5 @@ Boolean(null);  // false
 Boolean(undefined);  // false
 Boolean(false);   // false
 ```
+
+### Boxing
